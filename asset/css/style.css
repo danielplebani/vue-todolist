@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol {
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.text-line-through {
+    text-decoration: line-through;
+}
