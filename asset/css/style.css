@@ -2,16 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    background-image: url(../img/8WL1hu.jpg);
+}
+
+h1{
+    font-family: 'Merriweather', serif;
+}
+
+button{
+    box-shadow: 2px 2px 2px greenyellow;
 }
 
 ol {
     cursor: pointer;
-}
-
-h1 {
-    font-family: 'Oswald', sans-serif;
+    box-shadow: 5px 5px 5px green;
 }
 
 .text-line-through {
     text-decoration: line-through;
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+     max-width: 55%;
+    }
 }
