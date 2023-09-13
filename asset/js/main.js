@@ -59,6 +59,10 @@ createApp({
 
     removeTodo(index) {
       this.tasks.splice(index , 1)
-    } 
+    },
+
+    changeText(index) {
+      this.tasks[index].done = !this.tasks[index].done
+    }
   }
 }).mount('#app')

@@ -31,7 +31,8 @@
 
         <ol style="max-width: 80%;" class="list-group list-group-numbered m-auto mt-5">
           <li class="list-group-item d-flex justify-content-between align-items-center" v-for="(todo, index) in tasks">
-            <span v-bind:class="todo.done == true ? 'text-line-through' : '' ">{{todo.text}}</span>
+            <span :class="todo.done == true ? 'text-line-through' : '' " 
+            @click="changeText(index)">{{todo.text}}</span>
             <i @click="removeTodo(index)" class="fa-solid fa-circle-xmark"></i>
           </li>
         </ol>
