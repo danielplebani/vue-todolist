@@ -21,12 +21,12 @@
         <h1 class="mb-5 text-success">CREATE YOUR TO DO LIST</h1>
 
         <label for="exampleInputEmail1" class="form-label">ENTER THE ACTIVITY TO BE CARRIED OUT</label>
-        <input type="email" class="form-control mb-2" id="exampleInputEmail1" placeholder="write here..." v-model="newTodo">
+        <input type="email" class="form-control mb-2" id="exampleInputEmail1" placeholder="write here..." v-model="newTodo" @keyup.enter="addNewTodo()">
 
         <div class="d-flex flex-column align-items-center">
           <span>{{error}}</span>
   
-          <button type="button" class="btn btn-success mt-1 w-auto"   @click="addNewTodo()">ADD NEW TASK</button> 
+          <button type="button" class="btn btn-success mt-1 w-auto" @click="addNewTodo()" >ADD NEW TASK</button> 
         </div>
 
         <ol style="max-width: 80%;" class="list-group list-group-numbered m-auto mt-5">
